@@ -52,6 +52,59 @@ textarea {
   padding: 0.06em 0.18em 0.1em 0.02em;
 }
 
+.homePage {
+  --st-black: #030303;
+  --st-panel: #0b0b0b;
+  --st-white: #f5f5f5;
+  --st-lime: #b8ff00;
+  --st-magenta: #ff00c8;
+  --st-border: rgba(255, 255, 255, 0.1);
+  overflow-x: clip;
+  background: var(--st-black);
+}
+
+.homePage-container {
+  margin: 0 auto;
+  width: min(100%, 1320px);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .homePage-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .homePage-container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.home-main-title {
+  font-family: "Arial Black", Impact, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.home-main-title-magenta {
+  color: var(--st-magenta);
+  text-shadow: 0 0 20px rgba(255, 0, 200, 0.35);
+}
+
+.home-cta-lime {
+  background: var(--st-lime);
+}
+
+.home-cta-magenta {
+  box-shadow: inset 0 0 0 1px rgba(255, 0, 200, 0.2);
+}
+
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(22, 216, 255, 0.65) rgba(255, 255, 255, 0.06);

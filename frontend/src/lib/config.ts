@@ -1,7 +1,12 @@
 export const API_URL = process.env.NEXT_PUBLIC_API_URL || "/api/v1";
 
-export const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=2400&q=85";
+export const HOME_IMAGES = {
+  hero: "/home/hero.jpg",
+  service: "/home/service.jpg",
+  storyMain: "/home/story-1.jpg",
+  storySecondary: "/home/story-2.jpg",
+  categories: ["/home/category-1.jpg", "/home/category-2.jpg", "/home/category-3.jpg", "/home/category-4.jpg"],
+} as const;
 
-export const WORKSHOP_IMAGE =
-  "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1800&q=80";
+export const HERO_IMAGE = HOME_IMAGES.hero;
+export const WORKSHOP_IMAGE = HOME_IMAGES.service;
