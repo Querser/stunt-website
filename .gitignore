@@ -1,0 +1,15 @@
+﻿# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS/editor junk
+.DS_Store
+.idea/
+
+# Local git metadata inside copied project
+**/.git/

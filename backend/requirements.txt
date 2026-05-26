@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+asyncpg
+greenlet
+httpx
+PyJWT
+passlib
+bcrypt
+python-multipart
+redis
