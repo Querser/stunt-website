@@ -56,15 +56,11 @@ export default function Header() {
   if (pathname.startsWith("/admin")) return null;
 
   return (
-    <header
-      className={`fixed left-0 right-0 top-0 z-50 border-b ${isHome ? "border-white/10 bg-[#030303]/55 backdrop-blur-md" : "border-white/10 bg-[#120c15]/70 backdrop-blur-xl"}`}
-      onMouseLeave={() => setPartsMenuOpen(false)}
-    >
+    <header className={`fixed left-0 right-0 top-0 z-50 border-b ${isHome ? "border-white/10 bg-black" : "border-white/10 bg-[#120c15]/70 backdrop-blur-xl"}`} onMouseLeave={() => setPartsMenuOpen(false)}>
       <div className="mx-auto flex h-[72px] max-w-[1700px] items-center justify-between px-5 sm:px-6 md:h-[84px] md:px-12">
         {isHome ? (
-          <Link href="/" className="home-main-title inline-flex flex-col text-white">
-            <span className="text-[2rem] leading-[0.85] tracking-[-0.03em]">STUNT</span>
-            <span className="-mt-1 text-[1.95rem] leading-[0.85] tracking-[-0.03em] text-[#b8ff00]">TECH</span>
+          <Link href="/" className="inline-flex items-center">
+            <img src="/home/logo-new.png" alt="Stunt Tech" className="h-10 w-auto sm:h-12 md:h-14" />
           </Link>
         ) : (
           <BrandMark />

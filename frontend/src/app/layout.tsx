@@ -1,11 +1,9 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { AppChrome } from "../components/AppChrome";
 
-const inter = Inter({ subsets: ["latin", "cyrillic"] });
 const metrikaId = process.env.NEXT_PUBLIC_YANDEX_METRIKA_ID;
 
 export const metadata: Metadata = {
@@ -55,7 +53,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${inter.className} bg-[#050505] text-white min-h-screen flex flex-col`}>
+      <body className="bg-[#050505] text-white min-h-screen flex flex-col">
         {metrikaId && (
           <>
             <Script id="yandex-metrika" strategy="afterInteractive">
