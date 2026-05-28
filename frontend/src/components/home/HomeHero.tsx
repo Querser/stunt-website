@@ -16,14 +16,14 @@ export function HomeHero() {
       <img
         src={HERO_IMAGE}
         alt="Stunt motorcycle"
-        className="absolute inset-0 h-full w-full object-cover object-[44%_52%] md:object-[40%_50%] lg:object-[38%_50%]"
+        className="home-hero-image absolute inset-0 h-full w-full object-cover object-[44%_52%] sm:object-[42%_52%] md:object-[40%_50%]"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.84)_40%,rgba(0,0,0,0.36)_72%,rgba(0,0,0,0.68)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.78)_0%,rgba(8,8,8,0.24)_38%,rgba(8,8,8,0.84)_100%)]" />
       <div className="pointer-events-none absolute inset-y-0 right-[9%] w-[34vw] bg-[radial-gradient(circle_at_68%_44%,rgba(255,0,205,0.22),transparent_58%)]" />
 
       <div className="homePage-container relative z-10 flex min-h-[660px] items-end pb-8 pt-24 sm:min-h-[760px] sm:pb-12 sm:pt-28 md:min-h-[860px] md:pb-14 md:pt-32">
-        <div className="max-w-[760px] md:-ml-8 lg:-ml-12">
+        <div className="home-hero-content max-w-[760px] md:-ml-8 lg:-ml-12">
           <h1 className="home-main-title max-w-[94vw] text-[clamp(1.95rem,9.6vw,8.8rem)] leading-[0.87] tracking-[-0.02em] text-white sm:text-[clamp(3rem,10.2vw,8.8rem)]">
             <span className="block">Твой байк -</span>
             <span className="block">Твои</span>

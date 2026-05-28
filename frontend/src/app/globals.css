@@ -142,6 +142,24 @@ textarea {
   box-shadow: inset 0 0 0 1px rgba(255, 0, 200, 0.2);
 }
 
+.home-hero-image {
+  object-position: 44% 52%;
+}
+
+.home-hero-content {
+  margin-left: 0;
+}
+
+@media (min-width: 1280px) {
+  .home-hero-image {
+    object-position: calc(50% - 400px) 50%;
+  }
+
+  .home-hero-content {
+    margin-left: -24px;
+  }
+}
+
 .hero-perks-wrap {
   margin-top: 28px;
 }
