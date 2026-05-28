@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "конфигуратор мотоцикла",
   ],
   applicationName: "Stunt Tech",
+  icons: {
+    icon: "/stunt-tab-icon.jpg",
+    shortcut: "/stunt-tab-icon.jpg",
+    apple: "/stunt-tab-icon.jpg",
+  },
   authors: [{ name: "Stunt Tech" }],
   creator: "Stunt Tech",
   publisher: "Stunt Tech",

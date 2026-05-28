@@ -16,7 +16,7 @@ export function HomeHero() {
       <img
         src={HERO_IMAGE}
         alt="Stunt motorcycle"
-        className="absolute inset-0 h-full w-full object-cover object-[68%_52%] md:object-right"
+        className="absolute inset-0 h-full w-full object-cover object-[60%_52%] md:object-[58%_50%] lg:object-[56%_50%]"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.84)_40%,rgba(0,0,0,0.36)_72%,rgba(0,0,0,0.68)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.78)_0%,rgba(8,8,8,0.24)_38%,rgba(8,8,8,0.84)_100%)]" />
