@@ -1,4 +1,4 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
   --background: #ffffff;
@@ -19,18 +19,16 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background: #050505;
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 button,
@@ -46,41 +44,40 @@ textarea {
   color: #fff;
 }
 
-.st-display {
-  line-height: 1.02;
-  letter-spacing: 0;
-  padding: 0.06em 0.18em 0.1em 0.02em;
-}
-
 .homePage {
-  --st-black: #030303;
-  --st-panel: #0b0b0b;
-  --st-white: #f5f5f5;
-  --st-lime: #b8ff00;
-  --st-magenta: #ff00c8;
-  --st-border: rgba(255, 255, 255, 0.1);
+  --stunt-black: #030303;
+  --stunt-deep-black: #000000;
+  --stunt-panel-black: #070707;
+  --stunt-border: rgba(255, 255, 255, 0.1);
+  --stunt-white: #f4f4f4;
+  --stunt-muted: rgba(255, 255, 255, 0.68);
+  --stunt-muted-strong: rgba(255, 255, 255, 0.82);
+  --stunt-lime: #a6ff00;
+  --stunt-lime-bright: #b6ff00;
+  --stunt-magenta: #ff00d4;
+  --stunt-magenta-deep: #cf00ba;
   overflow-x: clip;
-  background: var(--st-black);
+  background: var(--stunt-black);
 }
 
 .homePage-container {
   margin: 0 auto;
-  width: min(100%, 1320px);
+  width: min(100%, 1360px);
   padding-left: 16px;
   padding-right: 16px;
 }
 
 @media (min-width: 768px) {
   .homePage-container {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1280px) {
   .homePage-container {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 46px;
+    padding-right: 46px;
   }
 }
 
@@ -92,22 +89,199 @@ textarea {
   text-transform: uppercase;
 }
 
-.home-main-title-magenta {
-  color: var(--st-magenta);
-  text-shadow: 0 0 20px rgba(255, 0, 200, 0.35);
+.home-brush {
+  color: var(--stunt-magenta);
+  font-family: Impact, "Arial Black", "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.88;
+  transform: skewX(-12deg) rotate(-1deg);
+  transform-origin: left center;
+  text-shadow:
+    0 0 14px rgba(255, 0, 212, 0.3),
+    0 0 28px rgba(255, 0, 212, 0.16);
+}
+
+.home-logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 0.78;
+  text-decoration: none;
+}
+
+.home-logo-stunt {
+  color: var(--stunt-white, #f4f4f4);
+  font-family: "Arial Black", Impact, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1.36rem, 1.9vw, 2rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.home-logo-tech {
+  color: var(--stunt-lime-bright, #b6ff00);
+  font-family: "Arial Black", Impact, "Roboto Condensed", "Helvetica Neue", Arial, sans-serif;
+  font-size: clamp(1.24rem, 1.72vw, 1.86rem);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  transform: skewX(-8deg) translateY(-1px);
+  text-shadow: 0 0 12px rgba(166, 255, 0, 0.28);
 }
 
 .home-cta-lime {
-  background: var(--st-lime);
+  border: 1px solid var(--stunt-lime-bright);
+  background: var(--stunt-lime-bright);
 }
 
 .home-cta-magenta {
+  border: 1px solid var(--stunt-magenta);
   box-shadow: inset 0 0 0 1px rgba(255, 0, 200, 0.2);
+}
+
+.hero-perks-wrap {
+  margin-top: 28px;
+}
+
+.hero-perks {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 2px;
+}
+
+.hero-perk {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.hero-perk-icon {
+  display: grid;
+  height: 26px;
+  width: 26px;
+  place-items: center;
+  border: 1px solid rgba(166, 255, 0, 0.72);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-perk-icon svg {
+  width: 14px;
+  height: 14px;
+  color: var(--stunt-lime);
+  stroke-width: 2.3;
+}
+
+.hero-perk-text {
+  color: var(--stunt-muted-strong);
+  font-size: 8px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+@media (min-width: 768px) {
+  .hero-perks {
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: clamp(18px, 2.8vw, 48px);
+  }
+
+  .hero-perk-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .hero-perk-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hero-perk-text {
+    font-size: 11.5px;
+    line-height: 1.05;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+  }
+}
+
+.service-feature-strip {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (min-width: 640px) {
+  .service-feature-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 24px;
+    gap: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .service-feature-strip {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: clamp(20px, 3vw, 52px);
+  }
+}
+
+.service-feature {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: max-content;
+}
+
+.service-feature-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid rgba(166, 255, 0, 0.78);
+  border-radius: 999px;
+  color: var(--stunt-lime);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.service-feature-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 2.2;
+}
+
+.service-feature-text {
+  color: var(--stunt-white);
+  font-size: 11px;
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.story-stat-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.36);
 }
 
 .custom-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: rgba(22, 216, 255, 0.65) rgba(255, 255, 255, 0.06);
+  scrollbar-color: rgba(166, 255, 0, 0.7) rgba(255, 255, 255, 0.06);
 }
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -120,5 +294,5 @@ textarea {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(22, 216, 255, 0.65);
+  background: rgba(166, 255, 0, 0.7);
 }

@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export function BrandMark({ compact = false }: { compact?: boolean }) {
   return (
-    <Link href="/" className={`font-black italic uppercase ${compact ? "text-2xl" : "text-2xl sm:text-3xl"} text-white`}>
-      <span className="text-[#16d8ff]">STUNT</span>
-      <span className="text-[#ff00e6]">TECH</span>
+    <Link href="/" className={`home-logo ${compact ? "scale-[0.9]" : ""}`}>
+      <span className="home-logo-stunt">STUNT</span>
+      <span className="home-logo-tech">TECH</span>
     </Link>
   );
 }

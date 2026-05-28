@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 import { DirectionGrid } from "../components/home/DirectionGrid";
 import { HomeHero } from "../components/home/HomeHero";
@@ -13,9 +13,9 @@ export default function HomePage() {
       <section className="border-b border-white/10 bg-[#070707]">
         <div className="homePage-container py-14 sm:py-16 md:py-20">
           <div className="mb-6 flex flex-col gap-4 sm:mb-8 sm:flex-row sm:items-start sm:justify-between">
-            <h2 className="home-main-title text-[clamp(2.8rem,8vw,5.8rem)] leading-[0.9] tracking-[-0.03em] text-white">
-              <span>Топовые </span>
-              <span className="text-[#b8ff00]">направления</span>
+            <h2 className="home-main-title text-[clamp(1.95rem,9.2vw,5.8rem)] leading-[0.9] tracking-[-0.02em] text-white sm:text-[clamp(2.8rem,8vw,5.8rem)]">
+              <span className="block">Топовые</span>
+              <span className="block text-[#b8ff00]">направления</span>
             </h2>
             <Link
               href="/catalog"
