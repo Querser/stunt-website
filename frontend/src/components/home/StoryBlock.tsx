@@ -14,7 +14,7 @@ export function StoryBlock() {
     <section className="relative overflow-hidden border-t border-white/10 bg-[#040404]">
       <div className="homePage-container grid items-center gap-9 py-14 sm:py-16 lg:grid-cols-[1fr_1.04fr] lg:gap-12 lg:py-20">
         <div className="relative overflow-hidden border border-white/10 bg-black">
-          <img src={HOME_IMAGES.storyMain} alt="Райдеры Stunt Tech" className="h-full w-full object-cover object-center" />
+          <img src={HOME_IMAGES.storyMain} alt="Райдеры Stunt Tech" className="home-story-image h-full w-full object-cover object-center" />
         </div>
 
         <div>

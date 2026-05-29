@@ -18,10 +18,10 @@ export function ServiceBand() {
           <img
             src={HOME_IMAGES.service}
             alt="Сервис Stunt Tech"
-            className="absolute inset-0 h-full w-full object-cover object-[72%_52%]"
+            className="home-service-image absolute inset-0 h-full w-full object-cover object-[72%_52%]"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(92deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.84)_36%,rgba(0,0,0,0.34)_66%,rgba(0,0,0,0.72)_100%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.32)_0%,rgba(0,0,0,0.22)_42%,rgba(0,0,0,0.6)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(92deg,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.78)_36%,rgba(0,0,0,0.28)_66%,rgba(0,0,0,0.66)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.28)_0%,rgba(0,0,0,0.18)_42%,rgba(0,0,0,0.52)_100%)]" />
 
           <div className="relative z-10 flex h-full w-full max-w-[96vw] flex-col justify-start px-5 pb-8 pt-8 sm:max-w-[620px] sm:px-7 sm:pb-10 sm:pt-10 lg:max-w-[58%] lg:px-9 lg:pt-11">
             <div className="mb-4 flex items-center gap-3 font-mono text-[10px] font-black uppercase tracking-[0.34em] text-[#ff00c8]">

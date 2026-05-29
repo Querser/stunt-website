@@ -62,22 +62,29 @@ textarea {
 
 .homePage-container {
   margin: 0 auto;
-  width: min(100%, 1360px);
-  padding-left: 16px;
-  padding-right: 16px;
+  width: min(100%, 1780px);
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 @media (min-width: 768px) {
   .homePage-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 }
 
 @media (min-width: 1280px) {
   .homePage-container {
-    padding-left: 46px;
-    padding-right: 46px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .homePage-container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -143,7 +150,14 @@ textarea {
 }
 
 .home-hero-image {
+  filter: brightness(1.08) contrast(1.05) saturate(1.07);
   object-position: 68% 50%;
+}
+
+.home-direction-image,
+.home-service-image,
+.home-story-image {
+  filter: brightness(1.08) contrast(1.06) saturate(1.08);
 }
 
 .home-hero-shell {
@@ -162,6 +176,14 @@ textarea {
 @media (min-width: 640px) {
   .home-hero-image {
     object-position: 70% 50%;
+  }
+}
+
+@media (max-width: 639px) {
+  .home-hero-image {
+    object-position: 74% 50%;
+    transform: scale(0.95);
+    transform-origin: 74% 50%;
   }
 }
 

@@ -18,9 +18,9 @@ export function HomeHero() {
         alt="Stunt motorcycle"
         className="home-hero-image absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.84)_40%,rgba(0,0,0,0.36)_72%,rgba(0,0,0,0.68)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.78)_0%,rgba(8,8,8,0.24)_38%,rgba(8,8,8,0.84)_100%)]" />
-      <div className="pointer-events-none absolute inset-y-0 right-[2%] w-[24vw] bg-[radial-gradient(circle_at_78%_44%,rgba(255,0,205,0.18),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.9)_0%,rgba(0,0,0,0.78)_40%,rgba(0,0,0,0.32)_72%,rgba(0,0,0,0.62)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.66)_0%,rgba(8,8,8,0.2)_38%,rgba(8,8,8,0.74)_100%)]" />
+      <div className="pointer-events-none absolute inset-y-0 right-[2%] w-[24vw] bg-[radial-gradient(circle_at_78%_44%,rgba(255,0,205,0.22),transparent_62%)]" />
 
       <div className="homePage-container home-hero-shell relative z-10 flex min-h-[660px] items-end pb-8 pt-24 sm:min-h-[760px] sm:pb-12 sm:pt-28 md:min-h-[860px] md:pb-14 md:pt-32">
         <div className="home-hero-content max-w-[780px]">

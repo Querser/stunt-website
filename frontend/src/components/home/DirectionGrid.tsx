@@ -48,7 +48,7 @@ export function DirectionGrid() {
             <img
               src={item.image}
               alt={item.title}
-              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
+              className="home-direction-image absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.08)_0%,rgba(0,0,0,0.15)_58%,rgba(0,0,0,0.34)_100%)]" />
             <div className="absolute left-0 top-0 h-24 w-24 bg-[linear-gradient(135deg,rgba(3,3,3,0.98)_0%,rgba(3,3,3,0.3)_100%)]" />
