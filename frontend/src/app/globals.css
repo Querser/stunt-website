@@ -363,3 +363,43 @@ textarea {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: rgba(166, 255, 0, 0.7);
 }
+
+@media (max-width: 639px) {
+  .garage-page {
+    overflow-x: clip;
+  }
+
+  .garage-page .garage-main-title {
+    font-size: clamp(2.35rem, 11.5vw, 3.2rem);
+    line-height: 0.88;
+    letter-spacing: -0.02em;
+  }
+
+  .garage-page .garage-visit-title {
+    font-size: clamp(2rem, 10.5vw, 2.95rem);
+    line-height: 0.92;
+    letter-spacing: -0.015em;
+  }
+
+  .garage-page .garage-step-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .garage-page .garage-step-text {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .garage-page .garage-address-title {
+    font-size: clamp(1.45rem, 8.3vw, 2.05rem);
+    line-height: 0.94;
+    letter-spacing: -0.01em;
+  }
+
+  .garage-page .garage-legal-note {
+    letter-spacing: 0.085em;
+  }
+}

@@ -50,20 +50,20 @@ const visitSteps = [
 
 export function GaragePage() {
   return (
-    <main className="min-h-screen bg-[#050505] px-6 pb-20 pt-28 text-white sm:px-8 md:px-12 md:pb-28 md:pt-36">
+    <main className="garage-page min-h-screen overflow-x-clip bg-[#050505] px-6 pb-20 pt-28 text-white sm:px-8 md:px-12 md:pb-28 md:pt-36">
       <div className="mx-auto max-w-[1700px]">
         <motion.section
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           className="border-b border-white/10 pb-8 md:pb-12"
         >
-          <div className="grid gap-8 xl:grid-cols-[minmax(0,1.2fr)_520px] xl:items-end">
-            <div>
+          <div className="grid min-w-0 gap-8 xl:grid-cols-[minmax(0,1.2fr)_520px] xl:items-end">
+            <div className="min-w-0">
               <div className="mb-5 flex items-center gap-4 font-mono text-[10px] font-black uppercase tracking-[0.35em] text-[#16d8ff]">
                 <span className="h-px w-12 bg-[#16d8ff]" />
                 Garage
               </div>
-              <h1 className="st-display max-w-full break-words pr-[0.12em] text-[clamp(2.75rem,9.6vw,9rem)] font-black uppercase italic leading-[0.86]">
+              <h1 className="garage-main-title st-display max-w-full whitespace-normal break-words pr-[0.12em] text-[clamp(2.5rem,11vw,9rem)] font-black uppercase italic leading-[0.86]">
                 Stunt <span className="text-[#16d8ff]">гараж</span>
               </h1>
               <p className="mt-6 max-w-4xl font-mono text-sm uppercase leading-7 tracking-[0.16em] text-white/45 sm:text-base">
@@ -101,7 +101,7 @@ export function GaragePage() {
 
           <div className="mt-8 border border-[#ff00e6]/45 bg-[#170516] p-5 shadow-[0_0_60px_rgba(255,0,230,0.12)] md:p-7">
             <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_340px] xl:items-end">
-              <div>
+              <div className="min-w-0">
                 <div className="font-mono text-[10px] font-black uppercase tracking-[0.32em] text-[#ff00e6]">
                   Быстрая связь
                 </div>
@@ -152,35 +152,35 @@ export function GaragePage() {
           ))}
         </section>
 
-        <section className="mt-5 grid gap-5 xl:grid-cols-[minmax(0,0.92fr)_minmax(520px,1.08fr)]">
+        <section className="mt-5 grid min-w-0 gap-5 xl:grid-cols-[minmax(0,0.92fr)_minmax(520px,1.08fr)]">
           <div className="border border-white/10 bg-[#080808] p-6 md:p-8">
             <div className="flex items-center gap-4 font-mono text-[10px] font-black uppercase tracking-[0.32em] text-[#16d8ff]">
               <Navigation className="h-4 w-4" />
               Как попасть
             </div>
-            <h2 className="mt-5 max-w-full break-words pr-[0.12em] text-[clamp(2rem,9vw,5.6rem)] font-black uppercase italic leading-[0.9] [overflow-wrap:anywhere]">
+            <h2 className="garage-visit-title mt-5 max-w-full whitespace-normal break-words pr-[0.12em] text-[clamp(1.9rem,10vw,5.6rem)] font-black uppercase italic leading-[0.92] [overflow-wrap:anywhere]">
               Приезд без лишних кругов
             </h2>
             <div className="mt-8 grid gap-4">
               {visitSteps.map((step, index) => (
-                <div key={step} className="grid grid-cols-[36px_minmax(0,1fr)] gap-3 border-t border-white/10 pt-4 sm:grid-cols-[44px_minmax(0,1fr)] sm:gap-4">
-                  <span className="font-mono text-xs font-black uppercase tracking-[0.22em] text-[#ff00e6]">
+                <div key={step} className="garage-step-row grid grid-cols-1 gap-2 border-t border-white/10 pt-4 sm:grid-cols-[44px_minmax(0,1fr)] sm:gap-4">
+                  <span className="font-mono text-xs font-black uppercase tracking-[0.22em] text-[#ff00e6] sm:pt-0">
                     0{index + 1}
                   </span>
-                  <p className="min-w-0 text-sm leading-7 text-white/55 [overflow-wrap:anywhere]">{step}</p>
+                  <p className="garage-step-text min-w-0 whitespace-normal text-sm leading-7 text-white/55 [overflow-wrap:anywhere]">{step}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="grid gap-5">
-            <div className="grid gap-5 md:grid-cols-[minmax(0,1fr)_300px]">
+            <div className="grid min-w-0 gap-5 md:grid-cols-[minmax(0,1fr)_300px]">
               <div className="border border-white/10 bg-[#0b0b0b] p-6 md:p-7">
                 <div className="mb-5 flex items-center gap-3 font-mono text-[10px] font-black uppercase tracking-[0.28em] text-[#16d8ff]">
                   <MapPin className="h-4 w-4" />
                   Адрес
                 </div>
-                <h3 className="max-w-full break-words pr-[0.1em] text-[clamp(1.55rem,8vw,2.2rem)] font-black uppercase italic leading-tight [overflow-wrap:anywhere] sm:text-4xl">
+                <h3 className="garage-address-title max-w-full whitespace-normal break-words pr-[0.1em] text-[clamp(1.45rem,8.2vw,2.2rem)] font-black uppercase italic leading-tight [overflow-wrap:anywhere] sm:text-4xl">
                   {siteContacts.primaryAddress}
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-white/45 [overflow-wrap:anywhere]">
@@ -193,14 +193,14 @@ export function GaragePage() {
                   Юр. данные
                 </div>
                 <p className="max-w-full break-words text-lg font-black uppercase italic leading-tight text-white [overflow-wrap:anywhere]">{siteContacts.legalName}</p>
-                <p className="mt-5 font-mono text-xs font-black uppercase leading-6 tracking-[0.11em] text-white/35 [overflow-wrap:anywhere] sm:tracking-[0.18em]">
+                <p className="garage-legal-note mt-5 font-mono text-xs font-black uppercase leading-6 tracking-[0.1em] text-white/35 [overflow-wrap:anywhere] sm:tracking-[0.18em]">
                   Контакты и условия уточняются у менеджера перед оплатой.
                 </p>
               </div>
             </div>
 
             <div className="border border-white/10 bg-[#080808] p-4">
-              <div className="aspect-[16/7] min-h-[320px] overflow-hidden bg-black">
+              <div className="aspect-[16/7] min-h-[260px] overflow-hidden bg-black sm:min-h-[320px]">
                 <iframe
                   src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014&z=16"
                   className="h-full w-full grayscale contrast-125 opacity-80"
@@ -219,9 +219,9 @@ export function GaragePage() {
               href={href}
               target={href.startsWith("http") ? "_blank" : undefined}
               rel={href.startsWith("http") ? "noreferrer" : undefined}
-              className="group flex min-h-20 items-center justify-between border border-white/10 bg-white/[0.03] px-5 font-mono text-xs font-black uppercase tracking-[0.18em] text-white/65 transition-colors hover:border-[#16d8ff] hover:text-white"
+              className="group flex min-h-20 min-w-0 items-center justify-between border border-white/10 bg-white/[0.03] px-5 font-mono text-xs font-black uppercase tracking-[0.18em] text-white/65 transition-colors hover:border-[#16d8ff] hover:text-white"
             >
-              <span className="flex items-center gap-3">
+              <span className="flex min-w-0 items-center gap-3">
                 <Icon className="h-4 w-4 text-[#16d8ff] transition-colors group-hover:text-[#ff00e6]" />
                 {label}
               </span>
