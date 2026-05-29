@@ -8,7 +8,6 @@ import {
   MapPin,
   MessageCircle,
   Navigation,
-  Phone,
   ShieldCheck,
   Wrench,
 } from "lucide-react";
@@ -51,7 +50,7 @@ const visitSteps = [
 
 export function GaragePage() {
   return (
-    <main className="min-h-screen bg-[#050505] px-5 pb-20 pt-28 text-white sm:px-6 md:px-12 md:pb-28 md:pt-36">
+    <main className="min-h-screen bg-[#050505] px-6 pb-20 pt-28 text-white sm:px-8 md:px-12 md:pb-28 md:pt-36">
       <div className="mx-auto max-w-[1700px]">
         <motion.section
           initial={{ opacity: 0, y: 18 }}
@@ -64,7 +63,7 @@ export function GaragePage() {
                 <span className="h-px w-12 bg-[#16d8ff]" />
                 Garage
               </div>
-              <h1 className="st-display text-[clamp(3.2rem,8.2vw,9rem)] font-black uppercase italic leading-[0.86]">
+              <h1 className="st-display max-w-full break-words pr-[0.12em] text-[clamp(2.75rem,9.6vw,9rem)] font-black uppercase italic leading-[0.86]">
                 Stunt <span className="text-[#16d8ff]">гараж</span>
               </h1>
               <p className="mt-6 max-w-4xl font-mono text-sm uppercase leading-7 tracking-[0.16em] text-white/45 sm:text-base">
@@ -76,7 +75,7 @@ export function GaragePage() {
               <div className="font-mono text-[10px] font-black uppercase tracking-[0.32em] text-[#ff00e6]">
                 Перед приездом
               </div>
-              <p className="mt-4 text-2xl font-black uppercase italic leading-tight sm:text-3xl">
+              <p className="mt-4 text-2xl font-black uppercase italic leading-tight [overflow-wrap:anywhere] sm:text-3xl">
                 Уточни наличие и время у менеджера.
               </p>
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -108,7 +107,7 @@ export function GaragePage() {
                 </div>
                 <a
                   href={phoneHref(siteContacts.phonePrimary)}
-                  className="mt-4 block w-fit max-w-full text-[clamp(2.25rem,6vw,6.6rem)] font-black uppercase italic leading-[0.92] text-white transition-colors hover:text-[#16d8ff]"
+                  className="mt-4 block max-w-full break-words pr-[0.12em] text-[clamp(1.9rem,8vw,6.6rem)] font-black uppercase italic leading-[0.92] text-white transition-colors hover:text-[#16d8ff] [overflow-wrap:anywhere]"
                 >
                   {siteContacts.phonePrimary}
                 </a>
@@ -159,16 +158,16 @@ export function GaragePage() {
               <Navigation className="h-4 w-4" />
               Как попасть
             </div>
-            <h2 className="mt-5 text-[clamp(2.3rem,5vw,5.6rem)] font-black uppercase italic leading-[0.9]">
+            <h2 className="mt-5 max-w-full break-words pr-[0.12em] text-[clamp(2rem,9vw,5.6rem)] font-black uppercase italic leading-[0.9] [overflow-wrap:anywhere]">
               Приезд без лишних кругов
             </h2>
             <div className="mt-8 grid gap-4">
               {visitSteps.map((step, index) => (
-                <div key={step} className="grid grid-cols-[44px_minmax(0,1fr)] gap-4 border-t border-white/10 pt-4">
+                <div key={step} className="grid grid-cols-[36px_minmax(0,1fr)] gap-3 border-t border-white/10 pt-4 sm:grid-cols-[44px_minmax(0,1fr)] sm:gap-4">
                   <span className="font-mono text-xs font-black uppercase tracking-[0.22em] text-[#ff00e6]">
                     0{index + 1}
                   </span>
-                  <p className="text-sm leading-7 text-white/55">{step}</p>
+                  <p className="min-w-0 text-sm leading-7 text-white/55 [overflow-wrap:anywhere]">{step}</p>
                 </div>
               ))}
             </div>
@@ -181,10 +180,10 @@ export function GaragePage() {
                   <MapPin className="h-4 w-4" />
                   Адрес
                 </div>
-                <h3 className="text-2xl font-black uppercase italic leading-tight sm:text-4xl">
+                <h3 className="max-w-full break-words pr-[0.1em] text-[clamp(1.55rem,8vw,2.2rem)] font-black uppercase italic leading-tight [overflow-wrap:anywhere] sm:text-4xl">
                   {siteContacts.primaryAddress}
                 </h3>
-                <p className="mt-4 text-sm leading-7 text-white/45">
+                <p className="mt-4 text-sm leading-7 text-white/45 [overflow-wrap:anywhere]">
                   Дополнительная точка: {siteContacts.secondaryAddress}.
                 </p>
               </div>
@@ -193,8 +192,8 @@ export function GaragePage() {
                 <div className="mb-5 font-mono text-[10px] font-black uppercase tracking-[0.28em] text-[#ff00e6]">
                   Юр. данные
                 </div>
-                <p className="text-lg font-black uppercase italic leading-tight text-white">{siteContacts.legalName}</p>
-                <p className="mt-5 font-mono text-xs font-black uppercase tracking-[0.18em] text-white/35">
+                <p className="max-w-full break-words text-lg font-black uppercase italic leading-tight text-white [overflow-wrap:anywhere]">{siteContacts.legalName}</p>
+                <p className="mt-5 font-mono text-xs font-black uppercase leading-6 tracking-[0.11em] text-white/35 [overflow-wrap:anywhere] sm:tracking-[0.18em]">
                   Контакты и условия уточняются у менеджера перед оплатой.
                 </p>
               </div>

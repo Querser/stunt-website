@@ -15,15 +15,15 @@ export default function PrivacyPage() {
 
 function LegalPage({ eyebrow, title, sections }: { eyebrow: string; title: string; sections: string[][] }) {
   return (
-    <main className="min-h-screen bg-[#050505] px-5 pb-20 pt-28 text-white sm:px-6 md:px-12 md:pt-36">
+    <main className="min-h-screen bg-[#050505] px-6 pb-20 pt-28 text-white sm:px-8 md:px-12 md:pt-36">
       <div className="mx-auto max-w-5xl">
-        <span className="mb-4 block font-mono text-xs font-black uppercase tracking-[0.4em] text-[#16d8ff]">{eyebrow}</span>
-        <h1 className="st-display mb-10 text-[clamp(3rem,7vw,6.5rem)] font-black uppercase italic leading-[0.9]">{title}</h1>
+        <span className="mb-4 block font-mono text-[11px] font-black uppercase tracking-[0.28em] text-[#16d8ff] sm:text-xs sm:tracking-[0.4em]">{eyebrow}</span>
+        <h1 className="st-display mb-10 max-w-full break-words pr-[0.12em] text-[clamp(2rem,10vw,6.5rem)] font-black uppercase italic leading-[0.92] [overflow-wrap:anywhere]">{title}</h1>
         <div className="space-y-6">
           {sections.map(([heading, body]) => (
             <section key={heading} className="border-t border-white/10 pt-6">
-              <h2 className="mb-3 text-lg font-black uppercase tracking-[0.14em] sm:text-xl">{heading}</h2>
-              <p className="leading-7 text-white/55">{body}</p>
+              <h2 className="mb-3 max-w-full break-words text-lg font-black uppercase tracking-[0.08em] [overflow-wrap:anywhere] sm:text-xl sm:tracking-[0.14em]">{heading}</h2>
+              <p className="leading-7 text-white/55 [overflow-wrap:anywhere]">{body}</p>
             </section>
           ))}
         </div>
