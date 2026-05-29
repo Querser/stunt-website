@@ -62,29 +62,20 @@ textarea {
 
 .homePage-container {
   margin: 0 auto;
-  width: min(100%, 1780px);
-  padding-left: 18px;
-  padding-right: 18px;
+  width: min(calc(100% - 44px), 1760px);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (min-width: 768px) {
   .homePage-container {
-    padding-left: 34px;
-    padding-right: 34px;
+    width: min(calc(100% - 64px), 1760px);
   }
 }
 
 @media (min-width: 1280px) {
   .homePage-container {
-    padding-left: 52px;
-    padding-right: 52px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .homePage-container {
-    padding-left: 60px;
-    padding-right: 60px;
+    width: min(calc(100% - 96px), 1760px);
   }
 }
 
@@ -150,14 +141,14 @@ textarea {
 }
 
 .home-hero-image {
-  filter: brightness(1.08) contrast(1.05) saturate(1.07);
+  filter: brightness(1.1) contrast(1.06) saturate(1.08);
   object-position: 68% 50%;
 }
 
 .home-direction-image,
 .home-service-image,
 .home-story-image {
-  filter: brightness(1.08) contrast(1.06) saturate(1.08);
+  filter: brightness(1.1) contrast(1.08) saturate(1.1);
 }
 
 .home-hero-shell {
@@ -181,9 +172,9 @@ textarea {
 
 @media (max-width: 639px) {
   .home-hero-image {
-    object-position: 74% 50%;
+    object-position: 71% 50%;
     transform: scale(0.95);
-    transform-origin: 74% 50%;
+    transform-origin: 71% 50%;
   }
 }
 
