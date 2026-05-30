@@ -200,7 +200,7 @@ export function GaragePage() {
             </div>
 
             <div className="border border-white/10 bg-[#080808] p-4">
-              <div className="aspect-[16/7] min-h-[260px] overflow-hidden bg-black sm:min-h-[320px]">
+              <div className="h-[260px] w-full overflow-hidden bg-black sm:aspect-[16/7] sm:h-auto sm:min-h-[320px]">
                 <iframe
                   src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9A%D0%B0%D1%88%D0%B8%D1%80%D1%81%D0%BA%D0%BE%D0%B5%20%D1%88%D0%BE%D1%81%D1%81%D0%B5%2C%2014&z=16"
                   className="h-full w-full grayscale contrast-125 opacity-80"
